@@ -28,13 +28,13 @@ const ProjectDetails = ({ id }: { id: string }) => {
             alt={`${project.name} cover`}
             className="w-full h-64 object-cover rounded-lg mb-6"
         />
-        <h2 className="text-3xl font-bold text-indigo-400 mb-2">{project.name}</h2>
+        <h2 className="text-3xl font-bold text-yellow-600 mb-2">{project.name}</h2>
         
         <div className="text-gray-300 mb-6">
             <div dangerouslySetInnerHTML={{ __html: project.description }} />
         </div>
         <div className="mb-6">
-            <h3 className="text-xl font-semibold text-indigo-400 mb-2">Features</h3>
+            <h3 className="text-xl font-semibold text-yellow-600 mb-2">Features</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
                 {project.features.map((feature: any, index: number) => (
                     <li key={index}>{feature}</li>
@@ -42,7 +42,7 @@ const ProjectDetails = ({ id }: { id: string }) => {
             </ul>
         </div>
         <div className="mb-6">
-            <h3 className="text-xl font-semibold text-indigo-400 mb-2">Technologies Used</h3>
+            <h3 className="text-xl font-semibold text-yellow-600 mb-2">Technologies Used</h3>
             <p className="text-gray-300">{project.technologies.length > 0 ? project.technologies.join(', ') : 'N/A'}</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">

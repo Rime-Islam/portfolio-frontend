@@ -23,7 +23,7 @@ const ExperienceDetails = ({ id }: { id: string }) => {
         <div className="bg-slate-800 h-screen p-8 text-white flex justify-center items-center">
         <div className="bg-slate-700 rounded-lg shadow-lg p-6 max-w-3xl w-full">
             <h3 className="text-2xl font-bold mb-2">
-                {experience.position} at <span className="text-indigo-400">{experience.companyName}</span>
+                {experience.position} at <span className="text-yellow-600">{experience.companyName}</span>
             </h3>
             <p className="text-sm text-gray-400 mb-4">
                 <strong>Employment Type:</strong> {experience.employmentType?.join(', ')}
@@ -39,7 +39,7 @@ const ExperienceDetails = ({ id }: { id: string }) => {
             </p>
             <div className="text-gray-300 mb-4" dangerouslySetInnerHTML={{ __html: experience.description }} />
             <p className="text-sm text-gray-400 mb-4">
-                <strong>Technologies:</strong> <span className="text-indigo-300">{experience.technologies?.join(', ')}</span>
+                <strong>Technologies:</strong> <span className="text-yellow-600">{experience.technologies?.join(', ')}</span>
             </p>
             <div className="grid grid-cols-2 gap-4 text-sm text-gray-400">
                 <p>

@@ -16,7 +16,7 @@ const Blog = () => {
         <div className="mt-[5vh]">
                <div className="">
                 <p className="text-gray-400">NEWS</p>
-                <h1 className="text-5xl font-bold text-white mt-2"><span className="border-b-4 border-yellow-500">Get</span> News Feed</h1>
+                <h1 className="text-5xl font-bold text-white mt-2"><span className="border-b-4 border-yellow-600">Get</span> News Feed</h1>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  justify-items-center mt-[5vh]">
    {

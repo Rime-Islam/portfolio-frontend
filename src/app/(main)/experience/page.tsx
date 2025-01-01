@@ -21,7 +21,7 @@ const Experience = () => {
            <div className="flex">
             <div className="flex-1">
                 <p className="text-gray-400">WORKING WITH</p>
-                <h1 className="text-5xl font-bold text-white mt-2"><span className="border-b-4 border-yellow-500">Exp</span>eriences</h1>
+                <h1 className="text-5xl font-bold text-white mt-2"><span className="border-b-4 border-yellow-600">Exp</span>eriences</h1>
             </div>
             
             <div className="flex-1">
@@ -42,7 +42,7 @@ const Experience = () => {
         </div>
            <div className="flex mt-8">
             <div className="flex-1">
-                <h1 className="text-5xl font-bold text-white mt-2"><span className="border-b-4 border-yellow-500">Edu</span>cation</h1>
+                <h1 className="text-5xl font-bold text-white mt-2"><span className="border-b-4 border-yellow-600">Edu</span>cation</h1>
             </div>
             
             <div className="flex-1">
