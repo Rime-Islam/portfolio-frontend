@@ -1,11 +1,17 @@
 import Banner from "@/components/home/Banner";
+import Contact from "@/components/home/Contact";
 import Do from "@/components/home/Do";
-import Project from "@/components/home/Project";
-import Skill from "@/components/home/Skill";
 import Navber from "@/components/ui/Navber"
 import Link from "next/link";
 import { FaClipboardList, FaGraduationCap, FaUserAlt } from "react-icons/fa";
+import { FaBlog } from "react-icons/fa6";
 import { GiSkills } from "react-icons/gi";
+import { GrContact } from "react-icons/gr";
+import { TbDeviceImacCode } from "react-icons/tb";
+import Skill from "./(main)/skill/page";
+import Project from "./(main)/project/page";
+import Blog from "./(main)/blog/page";
+import Experience from "./(main)/experience/page";
 
 
 export default function Home() {
@@ -31,8 +37,14 @@ export default function Home() {
       <div id="do" className="py-[5vh] flex flex-col items-center justify-center text-white">
         <Do />
       </div>
-      <div id="work" className=" flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
-      
+      <div id="experience" className="py-[5vh] flex flex-col items-center justify-center text-black">
+      <Experience />
+      </div>
+      <div id="blog" className=" flex flex-col items-center justify-center text-black">
+      <Blog />
+      </div>
+      <div id="contact" className=" flex flex-col items-center justify-center text-black">
+      <Contact />
       </div>
     </div>
 
@@ -41,13 +53,22 @@ export default function Home() {
                   <FaUserAlt className="text-center w-6 text-white h-6 hover:scale-125"/>
                   </a>
                   <a href="#skill">
-                    <FaClipboardList className="text-center w-6 text-white h-6 hover:scale-125" />
+                  <GiSkills className="text-center w-6 text-white h-6 hover:scale-125"/>
                   </a>
                   <a href="#project">
-                 <GiSkills className="text-center w-6 text-white h-6 hover:scale-125"/>
+                  <FaClipboardList className="text-center w-6 text-white h-6 hover:scale-125" />
                   </a>
                   <a href="#do">
+                    <TbDeviceImacCode className="text-center w-6 text-white h-6 hover:scale-125"/>
+                  </a>
+                  <a href="#experience">
                     <FaGraduationCap className="text-center w-6 text-white h-6 hover:scale-125"/>
+                  </a>
+                  <a href="#blog">
+                    <FaBlog className="text-center w-6 text-white h-6 hover:scale-125"/>
+                  </a>
+                  <a href="#contact">
+                    <GrContact className="text-center w-6 text-white h-6 hover:scale-125"/>
                   </a>
                  
              </div>

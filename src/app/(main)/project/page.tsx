@@ -1,6 +1,5 @@
 'use client'
 import { useGetAllProject } from "@/hooks/projects/project.hook";
-import HtmlContent from "@/lib/htmlContent";
 import Link from "next/link";
 import { Key } from "react";
 import { FaGithubSquare, FaReact } from "react-icons/fa";

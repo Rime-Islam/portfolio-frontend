@@ -1,3 +1,4 @@
+"use client"
 import { getAllExprience, getSingleExprience } from "@/service/exprience";
 import { useQuery } from "@tanstack/react-query";
 
