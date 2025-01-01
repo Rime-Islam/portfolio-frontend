@@ -4,10 +4,19 @@ import { useGetAllBlog } from "@/hooks/blogs/blog.hook";
 import Link from "next/link";
 
 const Blog = () => {
-      const {data} = useGetAllBlog();
+      const {data, isLoading} = useGetAllBlog();
             const blog = data?.data;
-            console.log(blog)
-    
+            
+            if (isLoading) {
+                return <div className="relative flex justify-center items-center">
+                <div className="absolute animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-purple-500" />
+                <img
+                  src="https://www.svgrepo.com/show/509001/avatar-thinking-9.svg"
+                  className="rounded-full h-28 w-28"
+                />
+              </div>;
+            }
+
     return (
         <div className="mt-[5vh]">
                <div className="">
@@ -18,11 +27,9 @@ const Blog = () => {
    {
     blog?.map((item: any) => (
         <div key={item._id} className="w-full  sm:max-w-md p-4 bg-base-200 rounded-lg hover:-translate-y-1 duration-500">
-      <Link href={`blog/${item._id}`}>  <Image
+      <Link href={`blog/${item._id}`}>  <img
         src={item?.photo}
         alt='picture'
-        width={400}
-        height={400}
         className=" w-full"
       /></Link>
 <div className="mt-8">
