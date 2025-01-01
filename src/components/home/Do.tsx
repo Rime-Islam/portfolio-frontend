@@ -1,19 +1,8 @@
 "use client"
-import animation from "@/app/animation.json";
-import Lottie from "react-lottie";
+
 
 const Do = () => {
-    const defaultOptions = {
-        loop: true,
-        autoplay: true, 
-        animationData: animation,
-        rendererSettings: {
-          preserveAspectRatio: 'xMidYMid slice'
-        }
-      };
-      const lottieContainerStyle = {
-        transform: 'rotate(0deg)', 
-      };
+ 
     const services = [
         {
             id: '01',
@@ -38,9 +27,7 @@ const Do = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 items-center">
                 <div className="flex-1 ">
                
-                    <div className="w-[350px] lg:w-[400px] h-[200px] lg:h-[800px] mt-8 lg-mt-0" style={lottieContainerStyle}>
-                    <Lottie options={defaultOptions} />   
-                        </div>                 
+                                 
             </div>
 
             <div data-aos="zoom-in" data-aos-duration="2000" className="flex-1 pl-2 ">

@@ -1,18 +1,17 @@
 'use client'
 import { FaArrowAltCircleDown, FaRegEye } from "react-icons/fa";
-import jsPDF from "jspdf";
 
 
-const PDF_URL = "https://drive.google.com/file/d/1UHqoaPW1UYA2ySbM6Ni28kQEb9aSaG4h/view?usp=sharing";
+// const PDF_URL = "https://drive.google.com/file/d/1UHqoaPW1UYA2ySbM6Ni28kQEb9aSaG4h/view?usp=sharing";
 const Banner = () => {
-    const downloadFile = () => {
-        const link = document.createElement("a");
-        link.href = PDF_URL;
-        link.download = "document.pdf"; // The name of the file to save
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+    // const downloadFile = () => {
+    //     const link = document.createElement("a");
+    //     link.href = PDF_URL;
+    //     link.download = "document.pdf"; // The name of the file to save
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     document.body.removeChild(link);
+    // };
 
 
 return (
@@ -32,9 +31,6 @@ return (
 
                      <div className="mt-5">
                         <h1 className="text-2xl font-semibold md:text-3xl">My Resume</h1>
-                        <button onClick={() => { downloadFile() }} className="btn mt-4 btn-success px-5 ">
-                <FaArrowAltCircleDown className="h-5 w-6 hover:scale-125"/>
-            </button>
                        <a href="https://drive.google.com/file/d/1UHqoaPW1UYA2ySbM6Ni28kQEb9aSaG4h/view?usp=sharing"> <button className="btn ml-4 btn-warning px-5"><FaRegEye className="h-5 w-6 hover:scale-125"/></button></a>
                      </div>
                  </div>

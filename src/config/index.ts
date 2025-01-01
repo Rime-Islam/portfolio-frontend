@@ -1,4 +1,4 @@
 const config = {
-    backendApi: 'https://portfolio-backend-nine-rose.vercel.app/api',
+    backendApi: process.env.NEXT_PUBLIC_API_URL,
   };
   export default config;
