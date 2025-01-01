@@ -16,14 +16,14 @@ const Banner = () => {
 
 
 return (
-    <div id="banner" className="pb-0 ">
-               <div className="sm:px-6  text-white max-w-7xl mx-auto flex flex-row items-start gap-5">
-             <div className="lg:flex flex-row-reverse w-[98vw] justify-between items-center">
+    <div id="banner" className=" ">
+               <div className=" text-white max-w-7xl mx-auto flex flex-row items-start gap-5">
+             <div className="lg:flex flex-row-reverse w-[100vw] justify-between items-center">
                  
                  <div data-aos="fade-left" data-aos-duration="2000" className="pb-8">
                  <img className=" md:w-72 rounded-full" src="https://i.ibb.co.com/4RMhxS3/Whats-App-Image-2024-09-27-at-9-04-07-PM-2-removebg-preview.png" alt="profile picture" />
                  </div>
-                 <div data-aos="fade-right" data-aos-duration="2000" className="pr-2">
+                 <div data-aos="fade-right" data-aos-duration="2000" className="">
                      <h1 className=" font-bold text-3xl lg:text-5xl">RIME ISLAM RIMU</h1>
                      <h3 className="lg:text-xl font-semibold text-yellow-600">Full Stack Developer</h3>
                         <p className="lg:w-96 w-48 mt-2">Hi there! I'm a passionate web developer 

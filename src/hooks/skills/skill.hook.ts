@@ -1,3 +1,4 @@
+"use client"
 import { getAllSkill } from "@/service/skills";
 import { useQuery } from "@tanstack/react-query";
 

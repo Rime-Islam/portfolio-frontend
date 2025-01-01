@@ -1,4 +1,7 @@
 import Banner from "@/components/home/Banner";
+import Do from "@/components/home/Do";
+import Project from "@/components/home/Project";
+import Skill from "@/components/home/Skill";
 import Navber from "@/components/ui/Navber"
 import Link from "next/link";
 import { FaClipboardList, FaGraduationCap, FaUserAlt } from "react-icons/fa";
@@ -8,7 +11,6 @@ import { GiSkills } from "react-icons/gi";
 export default function Home() {
   return (
     <div>
-    {/* Navbar */}
     <div className="sticky top-0 z-50 ">
       <Navber />
     </div>
@@ -17,16 +19,19 @@ export default function Home() {
   
     {/* Slides */}
     <div className="relative bg-slate-800">
-      <div id="banner" className=" h-screen  flex items-center justify-center">
+      <div id="banner" className=" py-[16vh] flex items-center justify-center">
        <Banner />
       </div>
-      <div id="work" className=" h-screen flex flex-col items-center justify-center bg-gradient-to-b from-indigo-800 to-purple-800 text-white">
-      
+      <div id="skill" className="py-[5vh] flex flex-col items-center justify-center text-white">
+      <Skill />
       </div>
-      <div id="skill" className=" h-screen flex flex-col items-center justify-center bg-gradient-to-b from-purple-800 to-pink-800 text-white">
-        
+      <div id="project" className="py-[10vh] flex flex-col items-center justify-center text-white">
+        <Project />
       </div>
-      <div id="project" className=" h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
+      <div id="do" className="py-[5vh] flex flex-col items-center justify-center text-white">
+        <Do />
+      </div>
+      <div id="work" className=" flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
       
       </div>
     </div>
@@ -35,13 +40,13 @@ export default function Home() {
                 <a href="#banner">
                   <FaUserAlt className="text-center w-6 text-white h-6 hover:scale-125"/>
                   </a>
-                  <a href="#work">
+                  <a href="#skill">
                     <FaClipboardList className="text-center w-6 text-white h-6 hover:scale-125" />
                   </a>
-                  <a href="#skill">
+                  <a href="#project">
                  <GiSkills className="text-center w-6 text-white h-6 hover:scale-125"/>
                   </a>
-                  <a href="#project">
+                  <a href="#do">
                     <FaGraduationCap className="text-center w-6 text-white h-6 hover:scale-125"/>
                   </a>
                  

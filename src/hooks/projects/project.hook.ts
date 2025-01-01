@@ -1,3 +1,4 @@
+'use client'
 import { getAllProject, getSingleProject } from "@/service/project";
 import { useQuery } from "@tanstack/react-query";
 

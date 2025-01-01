@@ -1,3 +1,4 @@
+"use server"
 import axiosInstance from "@/lib/axios/axios";
 
 export const getAllProject = async () => {
