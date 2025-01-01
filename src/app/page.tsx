@@ -40,7 +40,7 @@ export default function Home() {
       <div id="experience" className="py-[5vh] flex flex-col items-center justify-center text-black">
       <Experience />
       </div>
-      <div id="blog" className=" flex flex-col items-center justify-center text-black">
+      <div id="blog" className="py-[5vh] flex flex-col items-center justify-center text-black">
       <Blog />
       </div>
       <div id="contact" className=" flex flex-col items-center justify-center text-black">

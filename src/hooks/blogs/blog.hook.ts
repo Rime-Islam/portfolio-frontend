@@ -1,3 +1,4 @@
+"use client"
 import { getAllBlog, getSigleBlog } from "@/service/blog";
 import { useQuery } from "@tanstack/react-query";
 

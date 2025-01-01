@@ -9,7 +9,7 @@ const ProjectDetails = ({ id }: { id: string }) => {
     if (isLoading) return <p>Loading...</p>;
   
     const project = data?.data; 
-  console.log(project)
+
     if (!project) return <p>No project found</p>;
 
     return (
